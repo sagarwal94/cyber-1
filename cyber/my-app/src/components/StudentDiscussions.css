@@ -1,0 +1,252 @@
+.discussions-container {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    margin: 2rem auto;
+  }
+  
+  .discussions-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .discussions-header h2 {
+    color: #192f5d;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  
+  .back-button {
+    background-color: #192f5d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    position: absolute;
+    left: 0;
+  }
+  
+  .back-button:hover {
+    background-color: #0d1b36;
+  }
+  
+  .topic-input-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  .topic-input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .add-topic-button {
+    background-color: #1e375a;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .add-topic-button:hover {
+    background-color: #0d1b36;
+  }
+  
+  .participants-button {
+    background-color: #1e375a;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .participants-button:hover {
+    background-color: #0d1b36;
+  }
+  
+  .participants-button.small {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .discussions-tabs {
+    display: flex;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .tab-button {
+    background: none;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .tab-button:hover {
+    color: #192f5d;
+  }
+  
+  .tab-button.active {
+    color: #192f5d;
+    font-weight: 600;
+  }
+  
+  .tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #192f5d;
+  }
+  
+  .topics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .topic-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .topic-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .topic-card.done {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .topic-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .topic-header h3 {
+    margin: 0 0 0.5rem 0;
+    color: #192f5d;
+  }
+  
+  .topic-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .topic-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .status-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+  }
+  
+  .status-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .status-button.done {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  .view-button {
+    background-color: #192f5d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  .view-button:hover {
+    background-color: #0d1b36;
+  }
+  
+  .no-topics {
+    text-align: center;
+    padding: 3rem;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    color: #666;
+  }
+  
+  .no-topics p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .discussions-header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .back-button {
+      position: static;
+      margin-bottom: 1rem;
+    }
+    
+    .action-buttons {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .topic-actions {
+      flex-direction: column;
+    }
+    
+    .add-topic-button,
+    .participants-button,
+    .view-button,
+    .status-button {
+      width: 100%;
+    }
+  }

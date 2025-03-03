@@ -22,27 +22,38 @@ const Login = () => {
       setError('Please enter both username and password');
       return;
     }
-
     
     if (activeTab === 'student') {
-      
+      // For demonstration, this would typically involve an API call to validate credentials
       console.log('Student logged in:', username);
       
-      sessionStorage.setItem('user', JSON.stringify({
+      // Store user information in sessionStorage
+      const userInfo = {
         name: username,
         id: username, 
         type: 'student'
-      }));
+      };
+      
+      // Make sure to stringify the object when storing in sessionStorage
+      sessionStorage.setItem('user', JSON.stringify(userInfo));
+      
+      // Navigate to student dashboard
       navigate('/student-dashboard'); 
     } else {
-      
+      // For demonstration, this would typically involve an API call to validate credentials
       console.log('Admin logged in:', username);
       
-      sessionStorage.setItem('user', JSON.stringify({
+      // Store user information in sessionStorage
+      const userInfo = {
         name: username,
         id: username,
         type: 'admin'
-      }));
+      };
+      
+      // Make sure to stringify the object when storing in sessionStorage
+      sessionStorage.setItem('user', JSON.stringify(userInfo));
+      
+      // Navigate to admin dashboard
       navigate('/admin-dashboard'); 
     }
   };

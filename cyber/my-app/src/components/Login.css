@@ -1,14 +1,17 @@
 .login-container {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-image: ('public(../../public/images/background.jpg)');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #192f5d; 
-  }
+  display: flex;
+  height: 100vh;
+  justify-content: left;
+  align-items: center;
+  /* Fix the background image syntax */
+  background-image: url('../../public/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #192f5d; /* Fallback color */
+}
+
+/* Rest of your Login.css remains the same */
   
   .login-box {
     background: rgba(255, 255, 255, 0.9); 

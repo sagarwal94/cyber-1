@@ -1,0 +1,176 @@
+.projects-container {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+  }
+  
+  .projects-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .projects-header h2 {
+    color: #192f5d;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  
+  .back-button {
+    background-color: #192f5d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    position: absolute;
+    left: 0;
+  }
+  
+  .back-button:hover {
+    background-color: #0d1b36;
+  }
+  
+  .projects-content {
+    flex: 1;
+    margin-bottom: 2rem;
+  }
+  
+  .course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .course-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .course-header h3 {
+    margin: 0;
+    color: #192f5d;
+    font-size: 1.2rem;
+  }
+  
+  .toggle-icon {
+    font-size: 0.8rem;
+    color: #555;
+  }
+  
+  .course-sections {
+    padding: 1rem;
+  }
+  
+  .section-item {
+    margin: 0.7rem 0;
+    padding-left: 1rem;
+  }
+  
+  .section-link {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+    display: block;
+    padding: 0.3rem 0;
+    font-size: 0.95rem;
+  }
+  
+  .section-link:hover {
+    color: #192f5d;
+    text-decoration: underline;
+  }
+  
+  /* New search section layout */
+  .search-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    padding-top: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .search-label {
+    font-weight: 500;
+    color: #333;
+    white-space: nowrap;
+  }
+  
+  .search-input-container {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.7rem;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .search-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-button:hover {
+    background-color: #f0f0f0;
+    border-radius: 50%;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .projects-header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .back-button {
+      position: static;
+      margin-bottom: 1rem;
+    }
+    
+    .search-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .search-input-container {
+      width: 100%;
+    }
+  }
