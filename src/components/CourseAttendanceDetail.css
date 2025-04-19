@@ -1,0 +1,356 @@
+.attendance-detail-container {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    margin: 2rem auto;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .back-button {
+    background-color: #192f5d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-button:hover {
+    background-color: #0d1b36;
+  }
+  
+  .back-button.secondary {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .back-button.secondary:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .course-header-detail {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1rem;
+  }
+  
+  .course-header-detail h2 {
+    color: #192f5d;
+    margin-bottom: 1rem;
+  }
+  
+  .course-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+  }
+  
+  .info-label {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.3rem;
+  }
+  
+  .info-value {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .attendance-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .summary-box {
+    flex: 1;
+    min-width: 120px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid #e0e0e0;
+  }
+  
+  .summary-box h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .summary-box .count {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .summary-box.present {
+    background-color: #e8f5e9;
+  }
+  
+  .summary-box.present .count {
+    color: #388e3c;
+  }
+  
+  .summary-box.absent {
+    background-color: #ffebee;
+  }
+  
+  .summary-box.absent .count {
+    color: #d32f2f;
+  }
+  
+  .summary-box.late {
+    background-color: #fff8e1;
+  }
+  
+  .summary-box.late .count {
+    color: #ffa000;
+  }
+  
+  .attendance-detail-section {
+    margin-bottom: 2rem;
+  }
+  
+  .attendance-detail-section h3 {
+    color: #192f5d;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .attendance-detail-table {
+    overflow-x: auto;
+  }
+  
+  .attendance-detail-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .attendance-detail-table th,
+  .attendance-detail-table td {
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .attendance-detail-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+  }
+  
+  .attendance-detail-table tr.present {
+    background-color: #f1f8e9;
+  }
+  
+  .attendance-detail-table tr.absent {
+    background-color: #ffebee;
+  }
+  
+  .attendance-detail-table tr.late {
+    background-color: #fff8e1;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .status-badge.present {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  .status-badge.absent {
+    background-color: #ffebee;
+    color: #c62828;
+  }
+  
+  .status-badge.late {
+    background-color: #fff8e1;
+    color: #f57f17;
+  }
+  
+  .action-button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+  }
+  
+  .action-button:hover {
+    background-color: #192f5d;
+    color: white;
+  }
+  
+  .your-attendance-section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .your-attendance-section h3 {
+    color: #192f5d;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .your-attendance-section h4 {
+    color: #333;
+    margin: 1.5rem 0 1rem;
+  }
+  
+  .your-attendance-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.3rem;
+  }
+  
+  .stat-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .stat-value.status-good {
+    color: #2e7d32;
+  }
+  
+  .stat-value.status-warning {
+    color: #f57f17;
+  }
+  
+  .stat-value.status-danger {
+    color: #c62828;
+  }
+  
+  .history-timeline {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 0.5rem 0;
+  }
+  
+  .timeline-item {
+    min-width: 120px;
+    border-radius: 6px;
+    padding: 0.8rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .timeline-item.present {
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+  }
+  
+  .timeline-item.absent {
+    background-color: #ffebee;
+    border: 1px solid #ffcdd2;
+  }
+  
+  .timeline-item.late {
+    background-color: #fff8e1;
+    border: 1px solid #ffecb3;
+  }
+  
+  .timeline-date {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+  }
+  
+  .timeline-status {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .timeline-item.present .timeline-status {
+    color: #2e7d32;
+  }
+  
+  .timeline-item.absent .timeline-status {
+    color: #c62828;
+  }
+  
+  .timeline-item.late .timeline-status {
+    color: #f57f17;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .course-info {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    
+    .attendance-summary {
+      flex-direction: column;
+    }
+    
+    .summary-box {
+      width: 100%;
+    }
+    
+    .navigation-buttons {
+      flex-direction: column;
+    }
+    
+    .your-attendance-stats {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }

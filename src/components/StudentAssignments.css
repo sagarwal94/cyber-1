@@ -1,0 +1,515 @@
+.assignments-container {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.assignments-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.assignments-header h2 {
+  color: #192f5d;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.back-button {
+  background-color: #192f5d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+  position: absolute;
+  left: 0;
+}
+
+.back-button:hover {
+  background-color: #0d1b36;
+}
+
+
+.create-assignment-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.create-assignment-button {
+  background-color: #192f5d;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.create-assignment-button:hover {
+  background-color: #0d1b36;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.search-label {
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+}
+
+.search-input-container {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.7rem;
+  padding-right: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.search-button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #192f5d;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.search-button:hover {
+  background-color: #0d1b36;
+}
+
+.assignments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.course-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.course-header {
+  padding: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.course-color-block {
+  width: 120px;
+  height: 70px;
+  border-radius: 0;
+  margin-right: 1.5rem;
+}
+
+.course-name {
+  flex: 1;
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.toggle-icon {
+  font-size: 0.8rem;
+  color: #555;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.assignment-details {
+  padding: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
+}
+
+.assignment-info {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.assignment-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.assignment-table td {
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+}
+
+.info-label {
+  width: 150px;
+  background-color: #f5f5f5;
+  font-weight: 500;
+  color: #333;
+}
+
+.info-value {
+  background-color: #fff;
+}
+
+.status-submitted {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.file-submission, .comment-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.file-icon, .comment-icon {
+  font-size: 1.2rem;
+}
+
+.file-link, .comment-link {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.file-link:hover, .comment-link:hover {
+  text-decoration: underline;
+}
+
+.assignment-summary {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.assignment-title {
+  color: #333;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+.assignment-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.due-date {
+  color: #555;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-badge.submitted {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.pending {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.grade-info {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.assignment-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.view-button, .submit-button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.view-button {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.view-button:hover {
+  background-color: #e0e0e0;
+}
+
+.submit-button {
+  background-color: #1976d2;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #1565c0;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.assignment-modal {
+  max-width: 700px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #192f5d;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e0e0e0;
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.cancel-button {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #c0c0c0;
+}
+
+.create-button {
+  background-color: #192f5d;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-button:hover {
+  background-color: #0d1b36;
+}
+
+
+.assignment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #333;
+}
+
+.form-input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  border-color: #192f5d;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(25, 47, 93, 0.1);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.required {
+  color: #d32f2f;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.checkbox-row {
+  margin-top: 0.5rem;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 768px) {
+  .assignments-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .back-button {
+    position: static;
+    margin-bottom: 1rem;
+  }
+  
+  .search-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .search-input-container {
+    width: 100%;
+  }
+  
+  .results-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .course-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .course-color-block {
+    margin-right: 0;
+  }
+  
+  .toggle-icon {
+    margin-left: 0;
+  }
+  
+  .assignment-table td {
+    display: block;
+    width: 100%;
+  }
+  
+  .info-label {
+    width: 100%;
+  }
+  
+  .assignment-meta,
+  .assignment-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .modal-container {
+    width: 95%;
+  }
+  
+  .form-row {
+    flex-direction: column;
+  }
+}

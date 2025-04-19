@@ -1,0 +1,197 @@
+.schedule-container {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    margin: 2rem auto;
+  }
+  
+  .schedule-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .schedule-header h2 {
+    color: #192f5d;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  
+  .back-button {
+    background-color: #192f5d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    position: absolute;
+    left: 0;
+  }
+  
+  .back-button:hover {
+    background-color: #0d1b36;
+  }
+  
+  .week-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+  }
+  
+  .nav-button {
+    background-color: #192f5d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: #0d1b36;
+  }
+  
+  .week-range {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .schedule-grid-container {
+    overflow-x: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .schedule-grid {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  .days-row th {
+    padding: 0.75rem;
+    background-color: #e9eff6;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .time-column {
+    width: 80px;
+  }
+  
+  .day-column {
+    width: calc((100% - 80px) / 7);
+  }
+  
+  .time-slot-row {
+    height: 30px;
+  }
+  
+  .time-cell {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #e0e0e0;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #666;
+    background-color: #f8f8f8;
+    white-space: nowrap;
+    vertical-align: top;
+  }
+  
+  .day-cell {
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    color: #999;
+    font-size: 0.8rem;
+  }
+  
+  .course-cell {
+    background-color: #e6f3f8;
+    border: 1px solid #a8d1e5;
+    padding: 0;
+  }
+  
+  .course-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+    font-size: 0.75rem;
+    overflow: hidden;
+  }
+  
+  .course-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+  }
+  
+  .course-code {
+    font-weight: 600;
+    color: #192f5d;
+  }
+  
+  .course-time {
+    color: #333;
+  }
+  
+  .course-name {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.3rem;
+  }
+  
+  .course-location {
+    color: #555;
+    margin-bottom: 0.2rem;
+  }
+  
+  .course-instructor {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.2rem;
+  }
+  
+  .course-status {
+    color: #008000;
+    font-weight: 500;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .schedule-header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .back-button {
+      position: static;
+      margin-bottom: 1rem;
+    }
+    
+    .week-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .week-range {
+      order: -1;
+      margin-bottom: 0.5rem;
+    }
+  }
